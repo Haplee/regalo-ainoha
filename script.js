@@ -31,8 +31,7 @@
   var hint = document.getElementById("hint");
 
   var clue =
-    "Piensa en la única que te acompaña a todas partes y se abraza a tu " +
-    "hombro sin que se lo pidas.";
+    "La única que te acompaña a todas partes y siempre va a tu lado.";
 
   var shown = false;
 
