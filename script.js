@@ -26,20 +26,15 @@
     });
   }
 
-  /* ---------- Acertijo escalonado ---------- */
+  /* ---------- Acertijo: una sola pista ---------- */
   var button = document.getElementById("hint-btn");
   var hint = document.getElementById("hint");
 
   var clue =
-    "No te lo voy a poner tan fácil. Piensa en la única que te acompaña " +
-    "a todas partes y se abraza a tu hombro sin que se lo pidas. " +
-    "Lo que buscas no cabe en un bolsillo.";
+    "Piensa en la única que te acompaña a todas partes y se abraza a tu " +
+    "hombro sin que se lo pidas.";
 
-  var answer = "Un bolso. 🤍 Y dentro, la promesa de dártelo en persona muy pronto.";
-
-  var steps = [clue, answer];
-  var labels = ["Me rindo, dímelo"];
-  var current = 0;
+  var shown = false;
 
   function show(text) {
     hint.textContent = text;
@@ -49,11 +44,11 @@
   }
 
   button.addEventListener("click", function () {
-    if (current < steps.length) {
-      show(steps[current]);
-      button.textContent = current < labels.length ? labels[current] : "Gracias por jugar";
-      current++;
-    }
+    if (shown) return;
+    shown = true;
+    show(clue);
+    button.textContent = "Gracias por jugar";
+    button.disabled = true;
     if (navigator.vibrate) {
       try { navigator.vibrate(12); } catch (e) {}
     }

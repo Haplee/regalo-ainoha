@@ -7,7 +7,7 @@ Es una página estática con temática de *envío en camino*: juega con la idea 
 ## Cómo funciona
 
 - **Título con degradado** sobre el nombre "Ainoha".
-- **Sección "¿Qué es?"** con un botón que va dando pistas hasta revelar el regalo (un bolso 🤍).
+- **Sección "¿Qué es?"** con un botón que da **una sola pista** (sin desvelar el regalo).
 - **Estado del envío**: tarjeta tipo *tracking* con los pasos del paquete.
 - **Mensaje final** con una cita y la firma.
 - **Reveal al hacer scroll**, orbes pastel de fondo y estilo *glassmorphism*.
