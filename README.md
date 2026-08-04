@@ -39,15 +39,23 @@ Todo el contenido editable está en `index.html` (textos, cita, firma) y en `scr
 
 ## QR para imprimir
 
-El archivo `qr/qr-ainoha.png` apunta a `http://192.168.1.132:5173/` (red local). Para imprimirlo en un folio y que se escanee desde el móvil:
+El archivo `qr/qr-ainoha.png` apunta a la web publicada: **https://haplee.github.io/regalo-ainoha/**
 
-1. Imprime `qr/qr-ainoha.png` a tamaño completo.
-2. El móvil debe estar en la **misma red Wi-Fi** que el equipo.
-3. Asegúrate de que el servidor está corriendo con `--bind 0.0.0.0`.
-4. Si el móvil no conecta, permite el puerto `5173` en el firewall de Windows (o ejecuta con permisos de administrador:
-   `New-NetFirewallRule -DisplayName "regalo-ainoha 5173" -Direction Inbound -Protocol TCP -LocalPort 5173 -Action Allow`).
+Para imprimirlo en un folio y que se escanee desde el móvil:
 
-> 💡 Para que el QR funcione **desde cualquier lugar** (no solo la red local), despliega la web en un hosting estático (GitHub Pages, Netlify o Vercel) y regenera el QR apuntando a la URL pública.
+1. Imprime `qr/qr-ainoha.png` a tamaño completo (deja el folio al menos a mitad de página).
+2. El QR funciona desde cualquier sitio, no necesita red local ni servidor.
+3. Escanea con la cámara del móvil y se abrirá la página directamente.
+
+## Desplegar en GitHub Pages
+
+El repo ya está en GitHub: https://github.com/Haplee/regalo-ainoha
+
+La web vive en https://haplee.github.io/regalo-ainoha/ (Pages activado desde `main`, raíz del repo). Para actualizarla tras un cambio:
+
+```bash
+git add . && git commit -m "mensaje" && git push
+```
 
 ## Regenerar el QR
 
