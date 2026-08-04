@@ -1,10 +1,10 @@
 :root {
   --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
-  --ink: #2b2430;
-  --ink-soft: rgba(43, 36, 48, 0.72);
-  --ink-faint: rgba(43, 36, 48, 0.5);
-  --card: rgba(255, 255, 255, 0.62);
-  --stroke: rgba(43, 36, 48, 0.14);
+  --ink: #f3ecf2;
+  --ink-soft: rgba(243, 236, 242, 0.66);
+  --ink-faint: rgba(243, 236, 242, 0.42);
+  --card: rgba(255, 255, 255, 0.08);
+  --stroke: rgba(255, 255, 255, 0.14);
   --btn-ink: #fff;
   --grad: linear-gradient(100deg, #f2548f 0%, #7c5cf0 50%, #f2905e 100%);
   --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -23,9 +23,9 @@ body {
   color: var(--ink);
   min-height: 100svh;
   background:
-    radial-gradient(120% 90% at 12% 0%, rgba(242, 84, 143, 0.16), transparent 60%),
-    linear-gradient(160deg, #fbf6fa 0%, #f4ecf6 45%, #fdeef2 100%);
-  background-color: #f7f1f6;
+    radial-gradient(120% 90% at 12% 0%, rgba(242, 84, 143, 0.12), transparent 60%),
+    linear-gradient(160deg, #231a2b 0%, #2a2133 45%, #33232c 100%);
+  background-color: #231a2b;
   overflow-x: hidden;
 }
 
@@ -102,7 +102,7 @@ h2 {
   text-wrap: balance;
 }
 
-.grad { color: #e24a7d; }
+.grad { color: #ffb27d; }
 @supports ((-webkit-background-clip: text) or (background-clip: text)) {
   .grad {
     background: var(--grad);
@@ -186,7 +186,7 @@ section { margin-top: 6.5rem; }
   .btn:hover:not(:disabled) { transform: translateY(-1px); box-shadow: 0 18px 40px rgba(43, 36, 48, 0.3); }
 }
 .btn:focus-visible {
-  outline: 3px solid #7c5cf0;
+  outline: 3px solid #c9b8f0;
   outline-offset: 3px;
 }
 
@@ -229,7 +229,7 @@ section { margin-top: 6.5rem; }
 }
 .step.active .mark {
   background: transparent;
-  border: 2px solid rgba(124, 92, 240, 0.75);
+  border: 2px solid rgba(201, 184, 240, 0.7);
   position: relative;
 }
 .step.active .mark::after {
@@ -280,7 +280,7 @@ html.js .reveal.in { opacity: 1; transform: translateY(0); }
   html { scroll-behavior: auto; }
 }
 @media (prefers-reduced-transparency: reduce) {
-  .pill, .glass { background: #fff; backdrop-filter: none; -webkit-backdrop-filter: none; }
+  .pill, .glass { background: #2a2133; backdrop-filter: none; -webkit-backdrop-filter: none; }
 }
 
 @media (max-width: 480px) {
