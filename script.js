@@ -31,7 +31,7 @@
   var hint = document.getElementById("hint");
 
   var clue =
-    "La única que te acompaña a todas partes y siempre va a tu lado.";
+    "El único que te acompaña a todas partes y siempre va a tu lado, tanto de fiesta como en tu dia a dia.";
 
   var shown = false;
 
